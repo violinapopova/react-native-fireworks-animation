@@ -1,5 +1,6 @@
 # React Native Fireworks Animation App
-![Uploading RN-Fireworks.gif…]()
+
+![RN-Fireworks](https://github.com/user-attachments/assets/ce4d6631-cbee-4335-b14b-95ac9f2ff79e)
 
 This is a simple React Native app that displays a Lottie animation and triggers it with a button press.
 
