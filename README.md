@@ -12,7 +12,7 @@ This is a simple React Native app that displays a Lottie animation and triggers 
 
 1. Clone the repository:
     ```sh
-    [git clone https://github.com/your-username/lottie-animation-app.git](https://github.com/violinapopova/react-native-fireworks-animation.git)
+    git clone https://github.com/your-username/lottie-animation-app.git](https://github.com/violinapopova/react-native-fireworks-animation.git)
     cd lreact-native-fireworks-animation
     ```
 
