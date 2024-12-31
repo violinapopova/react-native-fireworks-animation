@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import LottieView from 'lottie-react-native';
+import { useRef } from 'react';
+import { ButtonText, Container, LottieAnimation, PressableButton } from './styles';
 
 export default function App() {
+  const fireworksRef = useRef<LottieView>(null);
+
+  function triggerFireworks() {
+    if (fireworksRef.current) {
+      fireworksRef.current.play(0);
+    }
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Container>
+        <PressableButton onPress={triggerFireworks}>
+          <ButtonText>Happy New Year</ButtonText>
+        </PressableButton>
+      </Container>
+      <LottieAnimation 
+        ref={fireworksRef}
+        source={require('./assets/fireworks.json')} 
+        loop
+        resizeMode='cover'
+      />
+    </>   
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
